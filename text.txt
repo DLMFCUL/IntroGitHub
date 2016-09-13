@@ -1,0 +1,76 @@
+Comandos:
+
+git clone link
+-> Copia o repositório do link para a máquina local
+
+git status
+-> Mostra o que há de diferente entre o repositório local e o repositório 
+do GitHub
+
+git add <fileName>
+-> Adiciona alterações de ficheiros ao repositório local
+
+git add . ou git add -A
+-> Adiciona todos os ficheiros do directório corrente
+
+git rm —cached <fileName>
+-> Remove do repositório local 
+mas permanece no sistema de ficheiros
+
+git rm -f <fileName>
+-> Remove do repositório local bem como do sistema
+
+git commit -m "mensagem"
+-> Faz commit das alterações adicionadas
+com o comando anterior add no repositório local
+
+git mv <fileName> <newFileName>
+-> Altera o nome do ficheiro commited
+
+git push
+-> Sincronizaa e actualiza as alterações feitas no repositório local
+para o repositório do gitHub
+
+git pull
+-> Sincroniza e actualiza um repositório local (já existente) 
+através do repositório do gitHub
+
+git checkout master
+-> Switch to the master branch
+
+// Criar um ficheiro .gitignore
+preencher com os ficheiros que não queremos fazer add
+quando fazemos add .
+Exemplos *.log
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Branching
+
+git branch -a 
+-> Devolve todos os branches deste repositório
+
+git branch BranchName
+-> Cria um novo branch
+
+git checkout BranchName
+-> Switch to the BranchName  
+
+Branch to master
+git merge BranchName (Devo estar no master branch)
+
+git stash
+-> Serve para guardar os documentos seguidos (git add)
+de um branch que não foram comitados.
+Isto é util quando queremos mudar de branch com ficheiros por comitar
+
+git stash apply
+-> Serve para aceder aos ficheiros seguidos 
+não vomitados num determinado branch
+Temos de estar dentro do branch
+--------------------------------------------
+
+Apagar pastas dentro da directoria do gitHubusando o terminal
+rm -rf folderName
+ 
+
+
