@@ -1,6 +1,6 @@
-Comandos:
+ Comandos:
 
-git clone link
+git clone <link>
 -> Copia o repositório do link para a máquina local
 
 git status
@@ -33,15 +33,18 @@ para o repositório do gitHub
 
 git pull
 -> Sincroniza e actualiza um repositório local (já existente) 
-através do repositório do gitHub
+através do repositório do gitHub. 
+Actualiza o repositório local
 
-git checkout master
--> Switch to the master branch
 
 // Criar um ficheiro .gitignore
-preencher com os ficheiros que não queremos fazer add
-quando fazemos add .
+Ficheiro contendo os ficheiros que nao
+queremos adicinar nem fazer commit
 Exemplos *.log
+Ficheiros de log que são criados e queremos meter fora
+do repositório.
+Ao criar um repositório directamente do gitHub,
+temos a opção de criar automaticamente este ficheiro
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Branching
@@ -49,14 +52,17 @@ Branching
 git branch -a 
 -> Devolve todos os branches deste repositório
 
-git branch BranchName
+git branch <branchName>
 -> Cria um novo branch
 
-git checkout BranchName
--> Switch to the BranchName  
+git checkout <branchName>
+-> Altera para o branchName branch  
 
-Branch to master
-git merge BranchName (Devo estar no master branch)
+git checkout master
+-> Altera para o master branchs
+
+git merge branchName (Devo estar no master branch)
+-> Faz o merge do branch branchName com o master
 
 git stash
 -> Serve para guardar os documentos seguidos (git add)
@@ -65,11 +71,14 @@ Isto é util quando queremos mudar de branch com ficheiros por comitar
 
 git stash apply
 -> Serve para aceder aos ficheiros seguidos 
-não vomitados num determinado branch
+não comitados num determinado branch
 Temos de estar dentro do branch
+
+git push origin branchName
+-> Faz o push do branch para o servidor remoto 
 --------------------------------------------
 
-Apagar pastas dentro da directoria do gitHubusando o terminal
+Apagar pastas dentro da directoria do gitHub usando o terminal
 rm -rf folderName
  
 
