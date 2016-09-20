@@ -1,5 +1,18 @@
  Comandos:
 
+git help <comando>
+git <comando> --help
+-> Ajuda para comandos Git
+
+git config --global user.name "Nome"
+-> Configuta o nome de usuario Git
+
+git config --global user.email "myemail@git.com"
+-> Configura o email do usuário Git
+
+git config --list
+-> Lista de configurações do usuário Git
+-------------------------------------------------------------------------------------
 git clone <link>
 -> Copia o repositório do link para a máquina local
 
@@ -13,6 +26,13 @@ git add <fileName>
 git add . ou git add -A
 -> Adiciona todos os ficheiros do directório corrente
 
+git reset <fileName> 
+-> Remove o ficheiro da stage area
+   Área uasada quando fazemos add
+
+git reset
+-> Remove todos od ficheiros da stage area
+ 
 git rm —cached <fileName>
 -> Remove do repositório local 
 mas permanece no sistema de ficheiros
@@ -74,8 +94,19 @@ git stash apply
 não comitados num determinado branch
 Temos de estar dentro do branch
 
-git push origin branchName
+git push -u origin branchName
 -> Faz o push do branch para o servidor remoto 
+-> A partir daque apenas fazer git push
+
+Apagar brunches 
+git branch --merged
+-> Indica os branches que foram adicionados ao branch actual
+
+git branch -d <branchName>
+-> Apaga o branch mencionado na maquina local
+
+git push origin --delete <branchName>
+-> Apaga o branch na máquina remota
 --------------------------------------------
 
 Apagar pastas dentro da directoria do gitHub usando o terminal
