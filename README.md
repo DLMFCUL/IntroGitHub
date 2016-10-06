@@ -1,18 +1,5 @@
 # IntroGitHub
-Algumas dicas como usar o GitHub
-
-Boas pessoal,
-
-Junto aqui alguns ficheiros que vos podem ajudar a trabalhar com o GitHub.
-Isto parece mais dificil do que é...
-A ideia é usar o GitHub para criar os nosso repositórios de trabalhos. 
-Assim temos sempre as versões correctas actualizadas.
-
-Juntei uma lista de comandos básicos para trabalhar com o git a partir do terminal.
-
-Existe também interface gráfica que também funciona muito bem.
-
-Deixo aqui alguns links de tutoriais para iniciantes de git e GitHub
+GitHub Tips
 
 Links:
 
